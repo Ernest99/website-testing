@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* HEADER JS STYLE */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --mont: 'Montserrat', sans-serif;
 }
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #b9b9b9 50%, #fff 50%);
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    padding: 35px 30px !important;
+    /* background: #111; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #111;
+}
+
+.logo .color {
+    color: royalblue;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #111;
+    font-weight: 400;
+    position: relative;
+}
+
+a.active {
+    color: royalblue !important;
+}
+
+.nav-list li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 2px;
+    background: royalblue;
+    transition: .3s;
+}
+
+.nav-list li a:hover::before {
+    width: 100%;
+    transition: .3s;
+}
+
+.header-text {
+    display: grid;
+    place-items: center;
+    margin-top: 180px;
+}
+
+.header-text h3 {
+    padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: royalblue;
+}
+
+.header-text h1 {
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text h2 {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-text h2 span {
+    color: royalblue;
+}
+
+
+/* ==HEADER JS STYLE== */
+
+
+/* ABOUT JS STYLE */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 15px 20px;
+}
+
+.aboutContent {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center !important;
+    gap: 20px;
+}
+
+.aboutContent img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+}
+
+.details {
+    padding-top: 20px;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.details h1 {
+    font-family: var(--poppins);
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.details p {
+    padding-top: 20px 0px;
+    font-family: var(--mont);
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+table {
+    margin-top: 15px;
+    font-family: var(--mont);
+}
+
+table td {
+    padding: 10px;
+}
+
+.btn {
+    background: royalblue;
+    padding: 15px 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: var(--mont);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ==ABOUT JS STYLE== */
+
+
+/* SERVICE JS STYLE */
+
+.service {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.service h1 {
+    font-size: 35px;
+    font-family: var(--poppins);
+    color: royalblue;
+    padding: 20px;
+}
+
+
+/* ==SERVICE JS STYLE== */
